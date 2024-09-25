@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+ <title>NewLife Hospitals-Home</title>
+ <style>
+    body{
+ font-family: Georgia, 'Times New Roman', Times, serif;
+}
+nav{
+ background-color: rgb(160, 184, 88);
+ height: 100px;
+ width: 100%;
+ position: sticky;
+ top: 0px;
+ color: white; 
+ z-index: 1;
+}
+#d2{
+ float: left; 
+ height: 50px;
+ margin-left: 50px;
+ margin-top: 30px;
+ font-size: 22 px;
+}
+#d2>a{
+ color: white;
+ text-decoration: none;
+ margin-left: 40px;
+ margin-right: 40px;
+ font-size: 20px;
+}
+#d3{
+ float: right; 
+ height: 50px;
+ margin-left: 50px;
+ margin-top: 30px;
+ margin-right: 50px;
+ font-size: 20px;
+ 
+}
+@keyframes change {
+ 10%{background-image: url("https://healthnewshub.org/wp-content/uploads/2019/03/doctors-day.jpg");}
+ 30% {background-image: url("https://img.freepik.com/free-photo/doctor-with-stethoscope-baby-without-clothes-examination-by-doctor_1157-46164.jpg?w=2000");}
+ 60% {background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnEsVJPOx-73xILL9NzwU7yDtdKfr8cYcxWQ&usqp=CAU");}
+ 100% {background-image: url("https://healthnewshub.org/wp-content/uploads/2019/03/doctors-day.jpg");}
+}
+header{
+ display: block;
+ width: 100%;
+ height: 500px;
+ z-index: 0;
+ animation: change 20s infinite;
+ background-repeat: no-repeat;
+ background-size: 100%, 500px;
+}
+#d4{
+ float: center;
+ margin-left: 50px;
+ margin-right: 25px;
+ margin-top: 125px;
+ width: auto;
+ height: 250px;
+ border-radius: 50%;
+ z-index: 1;
+}
+#plogin{
+ background: rgba(99, 130, 192, 0.837);
+ height: 300px;
+ width: 100%;
+ font-size: 20px;
+ margin-top:0px;
+}
+#plogin>h3{
+ text-align: center;
+ margin-top: 10px;
+ font-size: 30px;
+ color: white;
+}
+#plogin>form{
+ text-align: center;
+ margin-bottom: 50px;
+ margin-left: 50px;
+ margin-right: 50px;
+ font-size: 20px;
+}
+#plogin>form>#b1{
+ background-color: rgb(18, 54, 121);
+ color: white;
+ height: 40px;
+ width: 75px;
+ font-size: 20px;
+ border:0px;
+ font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#info{
+ width: 100%;
+ height: 880px;
+ background-color: white;
+ align-items: center;
+ z-index:0;
+ display: grid;
+ justify-content: space-evenly;
+ grid-gap: 20px;
+ margin-top: 20px;
+ margin-bottom: 150px;
+}
+#d5, #pd5{
+ grid-column: 1;
+ grid-row: 1;
+ width: 705px;
+ height: 450px; 
+}
+#d6, #pd6{
+ grid-column: 2;
+ grid-row: 1;
+ width: 705px;
+ height: 450px;
+}
+#d7, #pd7{
+ grid-column: 1;
+ grid-row: 2;
+ width: 705px;
+ height: 450px;
+}
+#d8, #pd8{
+ grid-column: 2;
+ grid-row: 2;
+ width: 705px;
+ height: 450px;
+}
+#pd5, #pd6, #pd7, #pd8{
+ background-color: rgb(0, 0, 0, 0.5);
+ color: white;
+ font-size: 20px;
+ text-align: center;
+ opacity:0;
+ transition: 0.5s;
+ padding-left: 10px;
+ padding-right: 10px;
+ width: 685px;
+} 
+#pd5:hover, #pd6:hover, #pd7:hover, #pd8:hover{
+ opacity: 1;
+} 
+#d11{
+ grid-column-start:1;
+ grid-column-end: 3;
+ grid-row:3;
+ height: 50px;
+ margin-bottom: 100px; background-color: rgba(52, 126, 124, 0.837);
+ font-family: Georgia, 'Times New Roman', Times, serif;
+ font-size: 20px;
+ color: white;
+ border:0px;
+}
+footer{
+ background-color:  rgb(160, 184, 88);
+ height: 300px;
+ width: 100%;
+ color: white;
+ font-size: 20px;
+ text-align: left;
+ display: grid;
+}
+#d10{
+ grid-column: 1;
+ grid-row: 1;
+ color: white;
+ text-decoration: none;
+ margin-left: 50px;
+}
+#d10>p>a{
+ text-decoration: none;
+ color: white;
+}
+#d12{
+ grid-column: 2;
+ grid-row: 1;
+}
+#d12>ul{
+ list-style-type: none;
+}
+ </style>
+ 
+ </head>
+ <body>
+ <nav>
+ <div id="d2"><a href="HMS.html">Home</a>
+ <a href="aboutus.html">About Us</a>
+ <a href="loginh.html">Login</a></div>
+ 
+ </nav>
+ <header>
+ <img id="d4" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqEPqmPG1zOwPa6NLzJ6XOKapRIDSdIwLWqQrlfClUMj0e6SXs2_82sGjXoOuKTAmyqQE&usqp=CAU" alt="logo" id="logo">
+ </header>
+ <section id="plogin">
+ <br>
+ <h3>Make an Appointment</h3>
+ <form action="url" method="post">
+ <label for="person">Treatment inquiry for*:&nbsp;&nbsp;</label>
+ <select name="person" id="person" required>
+ <option value="self">self</option>
+ <option value="other">other</option>
+ </select><br><br>
+ <input type="text" name="Name" placeholder="Name*" required>
+ <input type="text" name="contact" placeholder="Phone nnumber*" required>
+ <input type="email" name="email" placeholder="Email">
+ <input type="date" required><br><br><br>
+ <input type="submit" value="Book" id="b1">
+ </form>
+ </section>
+ <section id="info">
+ <img src="https://i.pinimg.com/736x/af/ae/85/afae8531583c49e3b29f35f87fde5a74.jpg" id="d5">
+ <div id="pd5">
+ <h2>Cardiology</h2>
+ <p>NewLife Hospitals specialises in all types of cardiac treatment, including invasive, 
+non-invasive 
+ and interventional procedures</p>
+ </div>
+ <img src="https://img.freepik.com/free-vector/neurologist-concept-doctor-examine-human-brain-idea-doctor-caring-about-patient-health-medical-mri-diagnosis-consultation-vector-illustration-cartoon-style_613284-2421.jpg" id="d6">
+ <div id="pd6">
+ <h2>Neurology</h2>
+ <p>The neurology department offers specialised, holistic care for all areas of the 
+nervous system, 
+ including the brain, nerves, muscles and spinal cord. </p>
+ </div>
+ <img src="https://sarvjanakari.com/wp-content/uploads/2021/05/MD-obstetrician-gynecologist-2.jpg" id="d7">
+ <div id="pd7">
+ <h2>Radiology</h2>
+ <p>The radiology department at NewLife Hospitals is equipped with the latest 
+technology and offers a wide range of 
+ diagnostic services, including X-ray, CT, MRI, ultrasound and mammography.</p>
+ </div>
+ <img src="https://www.richard-wolf.com/mam/data/Typo3/Disziplinen/Paediatrie/Pediatrics_1920_640px.jpg" id="d8">
+ <div id="pd8">
+ <h2>Pediatrics</h2>
+ <p>Our paediatric department offers a wide range of services for children, including 
+vaccinations, 
+ developmental assessments, and treatment for common childhood illnesses.</p>
+ </div>
+ 
+ </section>
+ <footer>
+ <div id="d10">
+ <h3>Contact:</h3>
+ <p>Phone: 1234567890</p>
+ <p>Email: 
+ <a href="mailto:newlifecare@gmail.com">newlifecare@gmail.com</a>
+ </p>
+ </div>
+ <div id="d12">
+ <h3>Our Locations:</h3>
+ <ul>
+ <li>Hyderbad</li>
+ <li>Pune</li>
+ <li>Delhi</li>
+ <li>Mumbai</li>
+ <li>Vishakapatnam</li>
+ <li>Bangalore</li>
+ </ul>
+ </div>
+ </footer>
+ </body>
+</html>
